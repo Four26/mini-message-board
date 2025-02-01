@@ -13,6 +13,11 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true }));
 app.use('/', indexRoute);
 
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({ error: 'Something went wrong.' })
+})
+
 
 app.listen(port, () => {
     console.log(`App is running on port ${port}`);
