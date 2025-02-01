@@ -1,7 +1,10 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
 const indexRoute = require('./routes/indexRoute');
+
+const port = process.env.PORT || 8080;
 
 
 app.set('view engine', 'ejs');
@@ -11,6 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/', indexRoute);
 
 
-app.listen(8080, () => {
-    console.log(`App is running on port ${8080}`);
+app.listen(port, () => {
+    console.log(`App is running on port ${port}`);
 });
