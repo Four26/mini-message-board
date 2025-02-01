@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+        <!-- Header -->
+        <h1 class="text-3xl font-bold text-gray-900 mb-4 text-center">Message Details</h1>
+        
+        <!-- User Name -->
+        <h2 class="text-xl font-semibold text-gray-800 mb-2 capitalize"><%= message.user %></h2>
+        
+        <!-- Message Text -->
+        <p class="text-gray-600 mb-4"><%= message.text %></p>
+        
+        <!-- Message Date -->
+        <p class="text-sm text-gray-500 italic mb-6"><%= message.date %></p>
+
+        <!-- Back Link -->
+        <a href="/" class="inline-block bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">Back</a>
+    </div>
+
+</body>
+</html>

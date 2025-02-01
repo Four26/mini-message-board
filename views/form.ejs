@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <title>Add a New Message</title>
+    </head>
+    <body class="bg-gray-100 font-sans">
+        <div class="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+            <!-- Heading -->
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 text-center">Add a New Message</h1>
+            <!-- Form -->
+            <form action="/" method="POST" class="space-y-4">
+                <!-- User Input -->
+                <div>
+                    <label for="user" class="block text-lg font-medium text-gray-700">User:</label>
+                    <input
+                        type="text"
+                        id="user"
+                        name="messageUser"
+                        required
+                        class="mt-2 p-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                </div>
+                <!-- Message Text -->
+                <div>
+                    <label for="text" class="block text-lg font-medium text-gray-700">Message:</label>
+                    <textarea
+                        id="text"
+                        name="messageText"
+                        required
+                        rows="4"
+                        class="mt-2 p-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    ></textarea>
+                </div>
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit" class="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+                        Send
+                    </button>
+                </div>
+            </form>
+            <!-- Back Link -->
+            <a href="/" class="block mt-4 text-center text-blue-500 hover:underline">Back to Home</a>
+        </div>
+    </body>
+</html>

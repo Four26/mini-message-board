@@ -1,0 +1,20 @@
+{
+  "name": "mini-message-board",
+  "version": "1.0.0",
+  "description": "A simple message board where you can post a message. Disclaimer you can't delete or edit your posted message.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch"
+  },
+  "keywords": [],
+  "author": "Franklin Abonero",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.2.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
